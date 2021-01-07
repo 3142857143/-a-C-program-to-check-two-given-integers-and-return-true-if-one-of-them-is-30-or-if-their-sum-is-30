@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+#include <conio.h>
+#include <ctype.h>
+int check(int n, int m);
+int sum(int n, int m);
+int main()
+{
+    int b, n, m, a;
+    printf("Enter the first integer: ");
+    scanf("%d", &n);/*getting the first integer into variable n*/
+    printf("Enter the second integer: ");
+    scanf("%d", &m);/*getting the second integer into variable m*/
+    printf("%d", check(n, m));
+}
+int sum(int n, int m)
+{
+    int a;
+    a = n + m;
+    return a;
+}
+int check(int n, int m)
+{
+    int a=0, b;
+    b = sum(n, m);
+    if(n == 30 || m == 30 || b == 30)
+    {
+        a = 1;
+    }
+    return a;
+}
